@@ -22,9 +22,7 @@ app.get('/*', function(req, res) {
 })
 
 app.get('/:news/:title', (req, res) => {
-    const actualPage = '/detail'
     const queryParamsss = { title: req.params.title, source: req.params.news }
-    nextApp.render(req, res, actualPage, queryParamsss)
   })
 
 server.listen(8080, function() {

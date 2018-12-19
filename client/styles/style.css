@@ -6,7 +6,8 @@ body > div > div {
 }
 
 section {
-  margin-top: 50px;
+  width: 80%;
+  margin-left: 15%;
 }
 
 div nav {
@@ -114,7 +115,8 @@ div > ul > a:hover {
 }
 
 div > section > img {
-  width: 100%;
+  width: 60%;
+
 }
 
 div + div > div > div > section {
