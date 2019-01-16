@@ -20,11 +20,11 @@ app.use(express.static('public'));
 app.get('/*', function(req, res) {
   res.sendFile('./public/index.html', { root: __dirname })
 })
-
+/*
 app.get('/:news/:title', (req, res) => {
     const queryParamsss = { title: req.params.title, source: req.params.news }
   })
-
+*/
 server.listen(8080, function() {
     console.log('listening on *:8080');
 });
