@@ -20,20 +20,7 @@ cron.schedule('*/3 * * * *', function(){
 });
 
 
-const botUserAgents = [
-  'W3C_Validator',
-  'baiduspider',
-  'bingbot',
-  'googlebot',
-];
 
-const botList = new RegExp(botUserAgents.join('|'), 'i');
-
-app.use(rendertron.makeMiddleware({
-  proxyUrl: 'http://localhost:3000/render',
-  userAgentPattern: botList,
-}));
-app.use(express.static('public'));
 
 
 
